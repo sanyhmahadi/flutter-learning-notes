@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
       height: 18,
       width: 18,
       decoration: BoxDecoration(color: Color(Helper.getHexToInt(clr))),
-      child: Icon(Icons.link),
+      child: Icon(Icons.alarm),
     ));
   }
 }
