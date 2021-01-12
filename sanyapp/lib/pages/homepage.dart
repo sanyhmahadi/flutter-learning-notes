@@ -25,26 +25,130 @@ class _HomePageState extends State<HomePage> {
       )),
       body: Column(
         children: [
-          Container(
-            height: 700,
-            padding: EdgeInsets.all(20),
-            child: ListView(
-              children: [
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-                Divider(),
-                _rowcell(),
-              ],
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
             ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
+          ),
+          Divider(),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("PS"),
+            ),
+            title: Text("Sany H. Mahadi"),
+            subtitle: Text("Co-Owner"),
+            onTap: () {},
           ),
         ],
       ),
