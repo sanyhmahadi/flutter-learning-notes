@@ -1,6 +1,8 @@
+//import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:sanyapp/pages/helper.dart';
+//import 'package:sanyapp/pages/helper.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -9,53 +11,79 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final _long11 =
-      "bfaiobfoaibfoaibfiooooooooooooooooooooooooobiafnaiqfbabfpoabfpbfbgpbpe9gbBGWBEIBWgbi9gb9gbGB9GUGBWUgbugbBGGB";
-  final _short11 = "hfafhafhopbfpbguidgbiufsfs";
+      "Premium BD Streaming is the best Streaming Platform in BD, Since 2019 Premium BD Streaming is the best Streaming Platform in BD, Since 2019 Premium BD Streaming is the best Streaming Platform in BD, Since 2019 Premium BD Streaming is the best Streaming Platform in BD, Since 2019 Premium BD Streaming is the best Streaming Platform in BD, Since 2019 Premium BD Streaming is the best Streaming Platform in BD, Since 2019";
+  List people = [
+    {"name": "Sany", "email": "sanykhan227@gmail.com"},
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: new AppBar(
-            title: Center(
-          child: Text('Sany'),
-        )),
-        body: Column(
-          children: [
-            Stack(
+      appBar: new AppBar(
+          title: Center(
+        child: Text('Sany'),
+      )),
+      body: Column(
+        children: [
+          Container(
+            height: 700,
+            padding: EdgeInsets.all(20),
+            child: ListView(
               children: [
-                Image.asset("asset/images/Premium Bd  Streaming -01.png"),
-                Positioned(
-                  bottom: 10,
-                  left: 15,
-                  child: Text(
-                    "Welcome to Premiun BD Streaming",
-                    style: TextStyle(color: Colors.blue, fontSize: 15),
-                  ),
-                )
+                _rowcell(),
+                Divider(),
+                _rowcell(),
+                Divider(),
+                _rowcell(),
+                Divider(),
+                _rowcell(),
+                Divider(),
+                _rowcell(),
+                Divider(),
+                _rowcell(),
+                Divider(),
+                _rowcell(),
               ],
             ),
-            SizedBox(
-              height: 18,
-              width: 18,
-            ),
-            Row(
-              children: [
-                _rowcell("#2980b9"),
-                _rowcell("#c0392b"),
-                _rowcell("#2c3e50"),
-              ],
-            )
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
   }
 
-  Widget _rowcell(String clr) {
-    return Expanded(
-        child: Container(
-      height: 18,
-      width: 18,
-      decoration: BoxDecoration(color: Color(Helper.getHexToInt(clr))),
-      child: Icon(Icons.alarm),
-    ));
+  Widget _rowcell() {
+    return Row(
+      children: [
+        Container(
+          height: 100,
+          width: 100,
+          decoration: BoxDecoration(
+            color: Colors.black,
+          ),
+          child: Icon(
+            Icons.access_alarm_outlined,
+            color: Colors.blue,
+          ),
+        ),
+        SizedBox(
+          width: 10,
+        )
+      ],
+    );
   }
 }
+
+/*Text(_long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11 +
+                    _long11)*/
