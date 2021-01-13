@@ -10,23 +10,53 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  String txt = "Premium BD";
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
         title: Center(child: Text('Sany')),
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.mail),
+        onPressed: () {
+          setState(() {
+            count++;
+          });
+        },
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       body: ListView(children: [
-        Text(txt),
+        Text(
+          "Count: ${count}",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 20),
+        ),
         RaisedButton(
-          child: Text("Tap"),
+          child: Text("Raised Button"),
+          elevation: 1000,
           onPressed: () {
             setState(() {
-              txt = "BeautyBlushed";
+              count++;
             });
           },
-        )
+        ),
+        FlatButton(
+          child: Text("Tap Here"),
+          onPressed: () {
+            setState(() {
+              count++;
+            });
+          },
+        ),
+        IconButton(
+          icon: Icon(Icons.ac_unit),
+          onPressed: () {
+            setState(() {
+              count++;
+            });
+          },
+        ),
       ]),
     );
   }
