@@ -3,7 +3,7 @@ import 'pages/homepage.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: 'Sany',
+    title: ("Premium BD Streaming"),
     home: HomePage(),
   ));
 }
